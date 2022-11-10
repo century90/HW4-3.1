@@ -5,10 +5,13 @@ import org.junit.jupiter.api.Test;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
+
 public class CardApplicationTest {
 
     @Test
     void shouldSubmitRequest() {
+
+
         open("http://localhost:9999");
         $("[data-test-id=\"name\"] input").sendKeys("Елена Мартемьянова");
         $("[data-test-id=\"phone\"] input").sendKeys("+79964052875");

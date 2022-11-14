@@ -16,7 +16,7 @@ public class CardApplicationTest {
         $("[data-test-id=\"name\"] input").sendKeys("Елена Мартемьянова");
         $("[data-test-id=\"phone\"] input").sendKeys("+79964052875");
         $("[data-test-id=\"agreement\"] span").click();
-        $("[class=\"button button_view_extra button_size_m button_theme_alfa-on-white\"]").click();
+        $("[class=\"button__content\"] span").click();
 
         $("[data-test-id=\"order-success\"]").shouldHave(Condition.text("Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время."));
 
